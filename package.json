@@ -1,6 +1,6 @@
 {
   "name": "kotlin-parson-bindings",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Kotlin/Native bindings for parson, a JSON C library",
   "scripts": {
     "postinstall": "npm run build",
