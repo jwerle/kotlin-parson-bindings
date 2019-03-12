@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MUSH=${MUSH:-./scripts/mush.sh}
+TEMPLATES=($(ls *.in))
+
+for file in ${TEMPLATES[@]}; do
+  out="${file/.in/}"
+  rm -f $out
+  cat $file | $MUSH > $out
+done

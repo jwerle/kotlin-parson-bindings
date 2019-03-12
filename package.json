@@ -1,0 +1,25 @@
+{
+  "name": "kotlin-parson-bindings",
+  "version": "0.0.1",
+  "description": "Kotlin/Native bindings for parson, a JSON C library",
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "make",
+    "test": "konanc test.kt $(konanc-config test.kc --libs --repos) -p program -o test.kexe && ./test.kexe"
+  },
+  "keywords": [
+    "kotlin",
+    "native",
+    "parson",
+    "bindings",
+    "c",
+    "json",
+    "parser"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@datkt/tape": "^0.7.0",
+    "konanc-config": "^5.4.2"
+  }
+}

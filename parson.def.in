@@ -1,0 +1,4 @@
+headers = parson.h
+headerFiler = parson.h
+compilerOpts = -I deps/parson
+linkerOpts = libparson.a

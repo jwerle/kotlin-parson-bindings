@@ -1,0 +1,7 @@
+parson.def
+*.o
+*.a
+*-build/
+node_modules/
+*.kexe
+*.klib
