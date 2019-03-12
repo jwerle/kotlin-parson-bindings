@@ -17,7 +17,7 @@ Use directly with [konanc-config](https://github.com/konanc-config/konanc-config
 $ konanc main.kt -p program -o main.kexe $(konanc-config --repos --libs kotlin-parson-bindings)
 ```
 
-or add to a `package.kc` file
+or add to a `lib.kc` file
 
 ```ini
 require[] = "kotlin-parson-bindings"
